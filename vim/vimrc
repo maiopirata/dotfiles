@@ -1,0 +1,17 @@
+set rtp+=~/.vim/bundle/vundle/
+call vundle#begin()
+
+"let vundle manage vundle
+Plugin 'kien/ctrlp.vim' " fuwwy find files
+Plugin 'scrooloose/nerdtree' " file drawer :NerdTreeToggle()
+Plugin 'benmills/vimux'
+Plugin 'tpope/vim-fugitive' " git helper
+Plugin 'tpope/vim-commentary' " git
+
+call vundle#end()
+filetype plugin indent on
+
+" adding to the status the current branch
+set laststatus=2
+set statusline=hello\ marco
+set statusline+=%{fugitive#statusline()}
