@@ -13,5 +13,17 @@ filetype plugin indent on
 
 " adding to the status the current branch
 set laststatus=2
-set statusline=hello\ marco
-set statusline+=%{fugitive#statusline()}
+set statusline=hello\ Marco\
+set statusline+=%#PmenuSel#
+set statusline+=\ %{fugitive#statusline()}
+set statusline+=%#LineNr#
+set statusline+=\ %f
+set statusline+=%m\
+set statusline+=%=
+set statusline+=%#CursorColumn#
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\[%{&fileformat}\]
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\
