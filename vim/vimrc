@@ -27,3 +27,10 @@ set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\
+
+" adding vim-monokai theme
+syntax enable
+colorscheme monokai
+
+" adding hybrid line numbers
+set number relativenumber
